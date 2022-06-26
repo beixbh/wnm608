@@ -1,0 +1,106 @@
+/*Creates the basic layout*/
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /*background*/
+    background-color: #fffcf6;
+    font-family: 'Athelas', serif;
+    color: #3d1b00
+}
+
+h1{
+    margin-top: 200px;
+    margin-left: 180px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    color: #3d1b00;
+}
+
+p{
+  width: 50%;
+  font-size: 22px;
+  margin-left: 180px;
+  margin-top: -10px;
+}
+
+img{
+  margin-left: 800px;
+  margin-top: -350px;
+}
+
+.button {
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: 'Athelas', serif;
+  border-radius: 12px;
+  width: 180px;
+  margin-left: 180px;
+  margin-top: -230px;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #d34d4c;
+}
+
+.button1:hover {
+  background-color: #d34d4c;
+  color: white;
+}
+
+
+nav{
+    width: 225px;
+    margin:40px 0px 0px 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3d1b00;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 2;
+    color: #3d1b00;
+    font-size: 16px;
+    
+}
+
+nav a{
+    color: #3d1b00;
+    padding-right: 3rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #3d1b00;
+    text-shadow:0 0 2px ##fff2db;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 2;
+}
+
+footer p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

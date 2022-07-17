@@ -1,0 +1,40 @@
+[
+	{
+		"name":"A",
+		"type":"Student",
+		"email":"ahe@art.edu",
+		"classes":[608]
+	},
+	{
+		"name":"B",
+		"type":"Student",
+		"email":"bhe@art.edu",
+		"classes":[608]
+	},
+	{
+		"name":"C",
+		"type":"Student",
+		"email":"che@art.edu",
+		"classes":[608]
+	},
+	{
+		"name":"D",
+		"type":"Student",
+		"email":"dhe@art.edu",
+		"classes":[608]
+	},
+	{
+		"name":"E",
+		"type":"Professor",
+		"email":"ehe@art.edu",
+		"classes":[608]
+	},
+	{
+		"name":"F",
+		"type":"Professor",
+		"email":"dhe@art.edu",
+		"classes":[608]
+	}
+
+
+]

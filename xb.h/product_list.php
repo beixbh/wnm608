@@ -1,185 +1,200 @@
 <?php
 
-include_once "./lib/php/functions.php";
-include_once "./parts/templates.php";
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
 
-?>
-
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 <head>
      <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Product List</title>
-
 
      <?php include "parts/meta.php"; ?>
 
-
-
+     <script src="lib/js/functions.js"></script>
+     <script src="js/templates.js"></script>
+     <script src="js/product_list.js"></script>
 </head>
 <body>
 
      <?php include "parts/navbar.php"; ?>
 
      <div class="container">
-          <div class="card soft">
                <h2>Product List</h2>
-               <ul>
-                    <div class="grid gap">
-                         <div class="col-xs-12 col-md-4" href="product_item.php?id=1">
-                              <figure class="figure product-overlay">
-                                   <img src="img/crimson glory.jpg" alt="">
-                                   <figcaption>
-                                        <div class="caption-body">
-                                             <li><a href="product_item.php?id=1">Crimson Glory</a></li>
-                                        </div>         
-                                   </figcaption>
-                              </figure>
+
+               <div class="form-control">
+                    <form class="hotdog light" id="product-search">
+                         <input type="search" placeholder="Search Products">
+                    </form>
+               </div>
+               <div class="form-control">
+                    <div class="card soft">
+                    <div class="display-flex flex-wrap">
+                         <div class="flex-stretch display-flex">
+                              <div class="flex-none">
+                                   <button data-filter="category" data-value="" type="button" class="form-button">All</button>
+                              </div>
+                              <div class="flex-none">
+                                   <button data-filter="category" data-value="fruit" type="button" class="form-button">s-clasp frame</button>
+                              </div>
+                              <div class="flex-none">
+                                   <button data-filter="category" data-value="vegetable" type="button" class="form-button">m-clasp frame</button>
+                              </div>
+                               <div class="flex-none">
+                                   <button data-filter="category" data-value="vegetable" type="button" class="form-button">l-clasp frame</button>
+                              </div>
                          </div>
-                         <div class="col-xs-12 col-md-4">
-                              <figure class="figure product-overlay">
-                                   <img src="img/pentatonic.jpg" alt="">
-                                   <figcaption>
-                                        <div class="caption-body">
-                                             <li><a href="product_item.php?id=2">Pentatonic</a></li>
-                                        </div>         
-                                   </figcaption>
-                              </figure>
-                         </div>
-                         <div class="col-xs-12 col-md-4">
-                              <figure class="figure product-overlay">
-                                   <img src="img/lace purple rose.jpg" alt="">
-                                   <figcaption>
-                                        <div class="caption-body">
-                                             <li><a href="product_item.php?id=3">lace purple rose</a></li>
-                                        </div>         
-                                   </figcaption>
-                              </figure>
-                         </div>
-                         <div class="col-xs-12 col-md-4">
-                              <figure class="figure product-overlay">
-                                   <img src="img/goldfish bubble.jpg" alt="">
-                                   <figcaption>
-                                        <div class="caption-body">
-                                             <li><a href="product_item.php?id=4">Goldfish Bubble</a></li>
-                                        </div>         
-                                   </figcaption>
-                              </figure>
-                         </div>
-                         <div class="col-xs-12 col-md-4">
-                              <figure class="figure product-overlay">
-                                   <img src="img/vintage cheongsam.jpg" alt="">
-                                   <figcaption>
-                                        <div class="caption-body">
-                                             <li><a href="product_item.php?id=5">Vintage cheongsam</a></li>
-                                        </div>         
-                                   </figcaption>
-                              </figure>
-                         </div>
-                         <div class="col-xs-12 col-md-4">
-                              <figure class="figure product-overlay">
-                                   <img src="img/ribbon flower.jpg" alt="">
-                                   <figcaption>
-                                        <div class="caption-body">
-                                             <li><a href="product_item.php?id=6">Ribbon Flower</a></li>
-                                        </div>         
-                                   </figcaption>
-                              </figure>
-                         </div>
-                         <div class="col-xs-12 col-md-4">
-                              <figure class="figure product-overlay">
-                                   <img src="img/white rose.jpg" alt="">
-                                   <figcaption>
-                                        <div class="caption-body">
-                                             <li><a href="product_item.php?id=7">White Rose</a></li>
-                                        </div>         
-                                   </figcaption>
-                              </figure>
-                         </div>
-                         <div class="col-xs-12 col-md-4">
-                              <figure class="figure product-overlay">
-                                   <img src="img/crane dancing.jpg" alt="">
-                                   <figcaption>
-                                        <div class="caption-body">
-                                             <li><a href="product_item.php?id8">Crane Dancing</a></li>
-                                        </div>         
-                                   </figcaption>
-                              </figure>
-                         </div>
-                         <div class="col-xs-12 col-md-4">
-                              <figure class="figure product-overlay">
-                                   <img src="img/japanese finland.jpg" alt="">
-                                   <figcaption>
-                                        <div class="caption-body">
-                                             <li><a href="product_item.php?id9">Japanese Finland</a></li>
-                                        </div>         
-                                   </figcaption>
-                              </figure>
-                         </div>
-                         <div class="col-xs-12 col-md-4">
-                              <figure class="figure product-overlay">
-                                   <img src="img/colorful houndstooth.jpg" alt="">
-                                   <figcaption>
-                                        <div class="caption-body">
-                                             <li><a href="product_item.php?id10">Colorful Houndstooth</a></li>
-                                        </div>         
-                                   </figcaption>
-                              </figure>
-                         </div>
-                         <div class="col-xs-12 col-md-4">
-                              <figure class="figure product-overlay">
-                                   <img src="img/autumn heart.jpg" alt="">
-                                   <figcaption>
-                                        <div class="caption-body">
-                                             <li><a href="product_item.php?id11">Autumn Heart</a></li>
-                                        </div>         
-                                   </figcaption>
-                              </figure>
-                         </div>
-                         <div class="col-xs-12 col-md-4">
-                              <figure class="figure product-overlay">
-                                   <img src="img/fullness.jpg" alt="">
-                                   <figcaption>
-                                        <div class="caption-body">
-                                             <li><a href="product_item.php?id12">Fullness</a></li>
-                                        </div>         
-                                   </figcaption>
-                              </figure>
-                         </div>
+                         
                     </div>
-                    <!-- <li><a href="product_item.php?id=4">product 4</a></li>
-                    <li><a href="product_item.php?id=5">product 5</a></li>
-                    <li><a href="product_item.php?id=6">product 6</a></li>
-                    <li><a href="product_item.php?id=7">product 7</a></li>
-                    <li><a href="product_item.php?id=8">product 8</a></li>
-                    <li><a href="product_item.php?id=9">product 9</a></li>
-                    <li><a href="product_item.php?id=10">product 10</a></li>
-                    <li><a href="product_item.php?id=11">product 11</a></li>
-                    <li><a href="product_item.php?id=12">product 12</a></li> -->
-               </ul>
+                    </div>
+               </div>
+
+               <div class='productlist grid gap'></div>
+               <div class="productlist grid gap"><a class="col-xs-12 col-md-4" href="product_item.php?id=1">
+                    <figure class="figure product ">
+               <div class="flex-stretch">
+            <img src="/AAU/WNM608/xb.h/img/crimson glory.jpg" alt="">
+        </div>
+        <figcaption class="flex-none product-price">
+            <div>crimson glory</div>
+            <div>$60.00</div>
+        </figcaption> 
+    </figure>
 
 
-
-               <?php
-
-               include_once "lib/php/functions.php";
-               include_once "parts/templates.php";
-
-               $result = makeQuery(
-                    makeConn(),
-                    "
-                    SELECT `id`,`title`,`price`
-                    FROM `products`
-                    ORDER BY `date_created` DESC
-                    LIMIT 12
-                    "
-               );
-
-               echo "<div class='productlist grid gap'>",array_reduce($result,'productListTemplate'),"</div>";
-               ?>
-          </div>
+</a><a class="col-xs-12 col-md-4" href="product_item.php?id=2">
+    <figure class="figure product ">
+        <div class="flex-stretch">
+            <img src="/AAU/WNM608/xb.h/img/pentatonic.jpg" alt="">
+        </div>
+        <figcaption class="flex-none product-price">
+            <div>pentatonic</div>
+            <div>$68.00</div>
+        </figcaption> 
+    </figure>
+</a><a class="col-xs-12 col-md-4" href="product_item.php?id=3">
+    <figure class="figure product ">
+        <div class="flex-stretch">
+            <img src="/AAU/WNM608/xb.h/img/lace purple rose.jpg" alt="">
+        </div>
+        <figcaption class="flex-none product-price">
+            <div>lace purple rose</div>
+            <div>$99.00</div>
+        </figcaption> 
+    </figure>
+</a><a class="col-xs-12 col-md-4" href="product_item.php?id=4">
+    <figure class="figure product ">
+        <div class="flex-stretch">
+            <img src="/AAU/WNM608/xb.h/img/goldfish bubble.jpg" alt="">
+        </div>
+        <figcaption class="flex-none product-price">
+            <div>goldfish bubble</div>
+            <div>$80.00</div>
+        </figcaption> 
+    </figure>
+</a><a class="col-xs-12 col-md-4" href="product_item.php?id=5">
+    <figure class="figure product ">
+        <div class="flex-stretch">
+            <img src="/AAU/WNM608/xb.h/img/vintage cheongsam.jpg" alt="">
+        </div>
+        <figcaption class="flex-none product-price">
+            <div>vintage cheongsam</div>
+            <div>$137.00</div>
+        </figcaption> 
+    </figure>
+</a><a class="col-xs-12 col-md-4" href="product_item.php?id=6">
+    <figure class="figure product ">
+        <div class="flex-stretch">
+            <img src="/AAU/WNM608/xb.h/img/ribbon flower.jpg" alt="">
+        </div>
+        <figcaption class="flex-none product-price">
+            <div>ribbon flower</div>
+            <div>$105.00</div>
+        </figcaption> 
+    </figure>
+</a><a class="col-xs-12 col-md-4" href="product_item.php?id=7">
+    <figure class="figure product ">
+        <div class="flex-stretch">
+            <img src="/AAU/WNM608/xb.h/img/white rose.jpg" alt="">
+        </div>
+        <figcaption class="flex-none product-price">
+            <div>white rose</div>
+            <div>$101.00</div>
+        </figcaption> 
+    </figure>
+</a><a class="col-xs-12 col-md-4" href="product_item.php?id=8">
+    <figure class="figure product ">
+        <div class="flex-stretch">
+            <img src="/AAU/WNM608/xb.h/img/crane dancing.jpg" alt="">
+        </div>
+        <figcaption class="flex-none product-price">
+            <div>crane dancing</div>
+            <div>$159.00</div>
+        </figcaption> 
+    </figure>
+</a><a class="col-xs-12 col-md-4" href="product_item.php?id=9">
+    <figure class="figure product ">
+        <div class="flex-stretch">
+            <img src="/AAU/WNM608/xb.h/img/japanese finland.jpg" alt="">
+        </div>
+        <figcaption class="flex-none product-price">
+            <div>japanese finland</div>
+            <div>$125.00</div>
+        </figcaption> 
+    </figure>
+</a><a class="col-xs-12 col-md-4" href="product_item.php?id=10">
+    <figure class="figure product ">
+        <div class="flex-stretch">
+            <img src="/AAU/WNM608/xb.h/img/colorful houndstooth.jpg" alt="">
+        </div>
+        <figcaption class="flex-none product-price">
+            <div>colorful houndstooth</div>
+            <div>$105.00</div>
+        </figcaption> 
+    </figure>
+</a><a class="col-xs-12 col-md-4" href="product_item.php?id=11">
+    <figure class="figure product ">
+        <div class="flex-stretch">
+            <img src="/AAU/WNM608/xb.h/img/autumn heart.jpg" alt="">
+        </div>
+        <figcaption class="flex-none product-price">
+            <div>autumn heart</div>
+            <div>$137.00</div>
+        </figcaption> 
+    </figure>
+</a><a class="col-xs-12 col-md-4" href="product_item.php?id=12">
+    <figure class="figure product ">
+        <div class="flex-stretch">
+            <img src="/AAU/WNM608/xb.h/img/fullness.jpg" alt="">
+        </div>
+        <figcaption class="flex-none product-price">
+            <div>fullness</div>
+            <div>$128.00</div>
+        </figcaption> 
+    </figure>
+</a></div>
      </div>
      
+
+      <?php 
+
+            
+
+            $result = makeQuery(
+                makeConn(),
+                "
+                SELECT *
+                FROM `products`
+                ORDER BY `date_create` DESC
+                LIMIT 12
+                "
+            );
+
+            echo "<div class='productlist grid gap'>",array_reduce($result,'productListTemplate'),"</div>";
+
+             ?>
+
+
+
 </body>
 </html>

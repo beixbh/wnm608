@@ -31,83 +31,19 @@
 		</div>
 	</header>
 
-	<div class="container">
-		<div class="card soft">
-			<h2>Grid</h2>
-			<div class="grid">
-				<div class="col-xs-6">column 6</div>
-				<div class="col-xs-6">column 6</div>
-			</div>
-			<div class="grid gap xs-small md-medium">
-				<div class="col-xs-4">column 4</div>
-				<div class="col-xs-4">column 4</div>
-				<div class="col-xs-4">column 4</div>
-
-				<div class="col-xs-3">column 3</div>
-				<div class="col-xs-3">column 3</div>
-				<div class="col-xs-3">column 3</div>
-				<div class="col-xs-3">column 3</div>
-
-				<div class="col-xs-3">column 3</div>
-				<div class="col-xs-3">column 3</div>
-				<div class="col-xs-6">column 6</div>
-			</div>
-		</div>
-	</div>
+	
 
 
-	<div class="container">
-		<div class="card soft">
-			<h2>Responsive Grid</h2>
-			<div class="grid">
-				<div class="col-xs-12 col-md-6">column 6</div>
-				<div class="col-xs-12 col-md-6">column 6</div>
-			</div>
-			<div class="grid">
-				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
-				<div class="col-xs-12 col-md-4 col-xl-6">column 4</div>
-				<div class="col-xs-12 col-md-4 col-xl-3">column 4</div>
+	
 
-				<div class="col-xs-3">column 3</div>
-				<div class="col-xs-3">column 3</div>
-				<div class="col-xs-3">column 3</div>
-				<div class="col-xs-3">column 3</div>
-			</div>
-			<div class="grid ten gap">
-				<div class="col-xs-2">column 2</div>
-				<div class="col-xs-2">column 2</div>
-				<div class="col-xs-2">column 2</div>
-				<div class="col-xs-2">column 2</div>
-				<div class="col-xs-2">column 2</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="grid gap xs-small md-medium">
-			<!-- .col-xs-6.col-md-3*4>.card>{Card} -->
-			<div class="col-xs-6 col-md-3">
-				<img src="https://via.placeholder.com/500" alt="" class="media-image">
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<img src="https://via.placeholder.com/500" alt="" class="media-image">
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<img src="https://via.placeholder.com/500" alt="" class="media-image">
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<img src="https://via.placeholder.com/500" alt="" class="media-image">
-			</div>
-		</div>
-	</div>
-
+	
 
 	<!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*3>lorem40 --> 
 	<div class="container">
 		<article id="article1" class="article card soft">
 			<div class="display-flex flex-align-center">
 				<div class="flex-stretch">
-					<h2>Article 1</h2>
+					<h2>Welcome to Allbags</h2>
 				</div>
 				
 			</div>
@@ -124,11 +60,10 @@
 		
 	<div class="container">
 		<article id="article2" class="article">
-			<h2>Article 2</h2>
+			<h2>Join and Get more Discounts</h2>
 			<div class="article-body">
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi suscipit placeat rem nam quia aliquid voluptatum ratione, quaerat blanditiis. Ab ut odit, reiciendis hic incidunt sit tempore? Mollitia accusamus, ipsum.</p>
-				<p>Dolores voluptate tempora animi blanditiis, atque dolore laboriosam, a! Neque unde nostrum, similique quae, alias nulla doloremque consectetur quam perferendis, animi officiis labore ipsum, sequi ipsa quo minima error obcaecati?</p>
-				<p>Deserunt, adipisci dolorem itaque iste odio delectus pariatur labore corrupti non, illum vero officiis nemo voluptas et inventore rerum suscipit, voluptatem sunt earum. Exercitationem earum deleniti quos provident repellat incidunt.</p>	
+				<p>Better pricing doesn't always have to be dropping your prices instantly.</p>
+				
 			</div>
 		</article>
 	</div>

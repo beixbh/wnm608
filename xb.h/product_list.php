@@ -14,6 +14,12 @@ include_once "parts/templates.php";
      <script src="lib/js/functions.js"></script>
      <script src="js/templates.js"></script>
      <script src="js/product_list.js"></script>
+
+     <script>
+         query({type:'products_all'}).then(d=>{
+            $(".productlist").html(listItemTemplate(d.result))
+         });
+     </script>
 </head>
 <body>
 
@@ -32,18 +38,29 @@ include_once "parts/templates.php";
                     <div class="display-flex flex-wrap">
                          <div class="flex-stretch display-flex">
                               <div class="flex-none">
-                                   <button data-filter="category" data-value="" type="button" class="form-button">All</button>
+                                   <button data-filter="category" data-value="all" type="button" class="form-button">All</button>
                               </div>
                               <div class="flex-none">
-                                   <button data-filter="category" data-value="fruit" type="button" class="form-button">s-clasp frame</button>
+                                   <button data-filter="category" data-value="s-clasp frame" type="button" class="form-button">s-clasp frame</button>
                               </div>
                               <div class="flex-none">
-                                   <button data-filter="category" data-value="vegetable" type="button" class="form-button">m-clasp frame</button>
+                                   <button data-filter="category" data-value="m-clasp frame" type="button" class="form-button">m-clasp frame</button>
                               </div>
                                <div class="flex-none">
-                                   <button data-filter="category" data-value="vegetable" type="button" class="form-button">l-clasp frame</button>
+                                   <button data-filter="category" data-value="l-clasp frame" type="button" class="form-button">l-clasp frame</button>
                               </div>
                          </div>
+
+                         <div class="flex-none">
+                    <div class="form-select">
+                        <select class="js-sort">
+                            <option value="1">Newest</option>
+                            <option value="2">Oldest</option>
+                            <option value="3">Least Expensive</option>
+                            <option value="4">Most Expensive</option>
+                        </select>
+                    </div>
+                </div>
                          
                     </div>
                     </div>

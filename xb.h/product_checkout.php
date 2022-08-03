@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title> Checkout Page </title>
-	<link rel="stylesheet" href="lib/css/styleguide1.css">
+	<link rel="stylesheet" href="lib/css/styleguide.css">
 	<link rel="stylesheet" href="css/storetheme.css">
 
 	<?php include "parts/meta.php"; ?>

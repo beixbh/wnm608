@@ -22,7 +22,7 @@ switch($data->type) {
 			WHERE 
 				`name` LIKE '%$data->search%' OR
 				`description` LIKE '%$data->search%' OR
-				`style` LIKE '%$data->search%'
+				`category` LIKE '%$data->search%'
 			ORDER BY `date_create` DESC
 			LIMIT 12");
 		break;

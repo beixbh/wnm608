@@ -48,9 +48,9 @@
 				
 			</div>
 			<div class="article-body">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, nisi, repudiandae. A neque animi vitae porro officia corrupti perferendis atque ullam vero nesciunt aut culpa, adipisci et ab, quaerat quia?</p>
-				<p>Nulla alias officia ut expedita nostrum saepe doloribus deserunt? Quibusdam expedita repudiandae dolorem saepe aut fugit minima at reprehenderit! Laudantium delectus porro explicabo qui voluptas deserunt alias architecto, quis ullam.</p>
-				<p>Sed, expedita deleniti provident atque facilis ut esse, voluptatem, beatae odit possimus autem reiciendis suscipit sit, ipsum nemo nisi. Impedit dicta accusantium, assumenda itaque dolores est laborum ipsum maxime asperiores.</p>
+				<p>Fast fashion can give you instant happiness, The exquisite handmade products can upgrade the happiness and become irreplaceable memories.</p>
+				<p>That is why i start handmade kiss lock handbags.</p>
+				<p>Updated every Saturday, with new discount offer!</p>
 			</div>
 		</article>
 
@@ -68,5 +68,6 @@
 		</article>
 	</div>
 
+	
 </body>
 </html>

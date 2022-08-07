@@ -19,14 +19,14 @@ function file_get_json($filename) {
 
 include_once "auth.php";
 function makeConn() {
-      $conn = new mysqli(...MYSQLIAuth());
+      $conn = new mysqli("localhost", "twicgrxbpsvh", "Hxcb52010!", "WNM608xbhe");
       if($conn->connect_errno) die($conn->connect_error);
       $conn->set_charset('utf8');
       return $conn;
 }
 function makePDOConn() {
       try {
-            $conn = new PDO(...PDOAuth());
+            $conn = new PDO("mysql:host=localhost; dbname=WNM608xbhe","twicgrxbpsvh", "Hxcb52010!");
       } catch(PDOException $e) {
             die($e->getMessage());
       }

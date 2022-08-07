@@ -2,6 +2,7 @@
 
 include "../lib/php/functions.php";
 
+
 $empty_product = (object)[
 	"title"=>"crimson glory",
 	"description"=>"",

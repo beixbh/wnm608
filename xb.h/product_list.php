@@ -35,13 +35,13 @@ include_once "parts/templates.php";
                             <button data-filter="category" data-value="" type="button" class="form-button">All</button>
                         </div>
                         <div class="flex-none">
-                            <button data-filter="category" data-value="fruit" type="button" class="form-button">s-clasp frame</button>
+                            <button data-filter="category" data-value="s-clasp frame" type="button" class="form-button">s-clasp frame</button>
                         </div>
                         <div class="flex-none">
-                            <button data-filter="category" data-value="vegetable" type="button" class="form-button">m-clasp frame</button>
+                            <button data-filter="category" data-value="m-clasp frame" type="button" class="form-button">m-clasp frame</button>
                         </div>
                         <div class="flex-none">
-                            <button data-filter="category" data-value="vegetable" type="button" class="form-button">l-clasp frame</button>
+                            <button data-filter="category" data-value="l-clasp frame" type="button" class="form-button">l-clasp frame</button>
                         </div>
                     </div>
                     <div class="flex-none">

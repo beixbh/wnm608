@@ -14,8 +14,9 @@
 		<div class="card soft">
 			<h2>About Allbags</h2>
 
-			<p>This is information about Allbags # <?= $_GET['id'] ?>
-			</p>
+			<p>Feel the joy and happiness that each handcraft brings.</p>
+            <p>Allbags, focus on making simple things to the extreme.</p>
+            <p>Love handmade products because it is unique.</p>
 		</div>
 	</div>
 	
